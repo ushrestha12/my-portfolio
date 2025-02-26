@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #FDF6E3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008080;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo {
+    text-align: center; /* Center the logo */
+    margin: 20px 0; /* Add some margin above and below */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    border: 3px solid #008080;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+/* About Page Layout */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ADD8E6;
+}
+
+.about-content {
+    display: flex;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.about-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: rgb(6, 4, 4);
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+}
+css
+Copy
+/* Card Section */
+.card-section {
+    padding: 40px 20px; /* Space around the section */
+    background-color: #fef6e4; /* Light background color */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set to 2 columns */
+    gap: 20px; /* Space between cards */
+}
+
+.card {
+    background-color: #ffffff; /* Card background color */
+    border: 2px solid #d1d1d1; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Space inside the card */
+    text-align: center; /* Centered text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    height: 200px; /* Fixed height for uniformity */
+    position: relative; /* For positioning the plus sign */
+}
+
+.card h3 {
+    font-size: 1.5em; /* Font size for headings */
+    color: #5a3e13; /* Darker text color */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.card p {
+    font-size: 2em; /* Larger font size for the plus sign */
+    color: #a77b5f; /* Subtle color for text */
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Position the plus sign */
+    top: 10px; /* Adjust positioning */
+    right: 10px; /* Adjust positioning */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Optional: Add a unique background color for each card */
+.card:nth-child(1) { background-color: #f9e4d8; }
+.card:nth-child(2) { background-color: #d8e4f9; }
+.card:nth-child(3) { background-color: #e4f9d8; }
+.card:nth-child(4) { background-color: #f9e4d8; }
+.card:nth-child(5) { background-color: #e4d8f9; }
+.card:nth-child(6) { background-color: #f9f2e4; }
+.card:nth-child(7) { background-color: #e4f9f2; }
+.plus-sign {
+    font-size: 2em; /* Larger font size for the plus sign */
+    color: #a77b5f; /* Subtle color for text */
+    text-decoration: none; /* Remove underline */
+    position: absolute; /* Position the plus sign */
+    top: 10px; /* Adjust positioning */
+    right: 10px; /* Adjust positioning */
+}
+
+.plus-sign:hover {
+    color: #008080; /* Change color on hover */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .card {
+        height: auto; /* Allow cards to adjust height */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        display: none; /* Hide by default */
+    }
+
+    nav.active ul {
+        display: flex; /* Show when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+        cursor: pointer;
+    }
+}
+
+.hamburger {
+    display: none; /* Hide on larger screens */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+}
+
+/* Add styles for hamburger lines */
+.hamburger div {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+/* When the screen is small */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
